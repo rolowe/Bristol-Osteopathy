@@ -1,1 +1,26 @@
+body {
+	font-family: $p-font;
+	color: $mid-grey;
 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color: $brand-green;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+	text-transform: uppercase;
+	font-size: 48px;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 36px;
+}
