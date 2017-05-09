@@ -46,7 +46,7 @@ function create_posttype() {
       'public' => true,
       'has_archive' => true,
       'rewrite' => array('slug' => 'therapies'),
-      'supports' => array( 'title', 'editor', 'thumbnail' ),
+      'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
       'menu_icon'   => 'dashicons-image-filter',
     )
   );
@@ -61,7 +61,7 @@ function create_posttype() {
       'public' => true,
       'has_archive' => true,
       'rewrite' => array('slug' => 'osteopath'),
-      'supports' => array( 'title', 'editor', 'thumbnail' ),
+      'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
       'menu_icon'   => 'dashicons-groups',
     )
   );
@@ -99,3 +99,31 @@ function create_posttype() {
 }
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );
+
+
+
+
+// P2P Connections
+function my_connection_types() {
+
+    p2p_register_connection_type( array(
+        'name' => 'location_to_osteopath',
+        'from' => 'locations',
+        'to' => 'osteopaths',
+        'cardinality' => 'many-to-many',
+        'admin_column' => 'from'
+    ) );
+
+    p2p_register_connection_type( array(
+        'name' => 'locations_to_therapies',
+        'from' => 'locations',
+        'to' => 'therapies',
+        'cardinality' => 'many-to-many',
+        'admin_column' => 'from'
+    ) );
+
+}
+add_action( 'p2p_init', 'my_connection_types' );
+
+
+
