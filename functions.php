@@ -24,7 +24,7 @@ foreach ($sage_includes as $file) {
   }
 
   require_once $filepath;
-} 
+}
 unset($file, $filepath);
 
 
@@ -126,4 +126,7 @@ function my_connection_types() {
 add_action( 'p2p_init', 'my_connection_types' );
 
 
-
+add_action( 'init', 'my_add_excerpts_to_pages' );
+function my_add_excerpts_to_pages() {
+     add_post_type_support( 'page', 'excerpt' );
+}

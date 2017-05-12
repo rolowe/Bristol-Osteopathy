@@ -3,4 +3,19 @@ div.meta-header {
 	padding: 10px;
 	background-color: $dark-grey;
 	color: #FFFFFF;
+  font-size: 13px;
+}
+
+
+
+/*//// CAROUSEL STYLES ////*/
+
+.carousel {
+  border: solid 1px lime;
+  position: relative;
+
+  .slick-slide img {
+    max-width: 100%;
+  }
+
 }

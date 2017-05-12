@@ -282,15 +282,15 @@ gulp.task('build', function(callback) {
 // ### Wiredep
 // `gulp wiredep` - Automatically inject Less and Sass Bower dependencies. See
 // https://github.com/taptapship/wiredep
-// gulp.task('wiredep', function() {
-//   var wiredep = require('wiredep').stream;
-//   return gulp.src(project.css)
-//     .pipe(wiredep())
-//     .pipe(changed(path.source + 'styles', {
-//       hasChanged: changed.compareSha1Digest
-//     }))
-//     .pipe(gulp.dest(path.source + 'styles'));
-// });
+gulp.task('wiredep', function() {
+  var wiredep = require('wiredep').stream;
+  return gulp.src(project.css)
+    .pipe(wiredep())
+    .pipe(changed(path.source + 'styles', {
+      hasChanged: changed.compareSha1Digest
+    }))
+    .pipe(gulp.dest(path.source + 'styles'));
+});
 
 // ### Gulp
 // `gulp` - Run a complete build. To compile for production run `gulp --production`.
