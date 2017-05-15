@@ -130,3 +130,14 @@ add_action( 'init', 'my_add_excerpts_to_pages' );
 function my_add_excerpts_to_pages() {
      add_post_type_support( 'page', 'excerpt' );
 }
+
+
+// Add Your Menu Locations
+function register_menu_locations() {
+  register_nav_menus(
+    array(
+      'footer' => __( 'Footer menu' )
+    )
+  );
+}
+add_action( 'init', register_menu_locations );

@@ -1,0 +1,37 @@
+.footer-menu {
+  background: $dark-grey;
+  overflow: hidden;
+  padding: 20px 0;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      text-align: center;
+      margin: 0 10px;
+
+      a {
+        color: #FFF;
+      }
+    }
+
+  }
+}
+
+footer {
+  background: $mid-grey;
+  text-align: center;
+  padding: 30px 0;
+  color: #FFF;
+
+  a {
+    color: #FFF;
+
+    &:hover {
+      color: #FFF;
+    }
+  }
+}

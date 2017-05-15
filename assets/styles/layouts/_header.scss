@@ -6,16 +6,95 @@ div.meta-header {
   font-size: 13px;
 }
 
+.banner {
+
+	a.brand {
+		display: block;
+		max-width: 500px;
+		width: 100%;
+		margin: 20px auto;
+
+		img {
+			width: 100%;
+		}
+
+	}
+
+}
+
+
+/*/////// NAV PRIMARY //////*/
+.nav-primary {
+	border-top: dashed 1px #CCC;
+	padding: 10px 0;
+	overflow: hidden;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			text-align: center;
+			width: 14%;
+
+			a {
+				color: $mid-grey;
+				text-transform: uppercase;
+			}
+		}
+
+	}
+
+}
 
 
 /*//// CAROUSEL STYLES ////*/
 
 .carousel {
-  border: solid 1px lime;
   position: relative;
 
   .slick-slide img {
     max-width: 100%;
   }
+
+	.slick-arrow {
+		width: 60px;
+		height: 60px;
+		text-indent: -999999em;
+		overflow: hidden;
+		position: absolute;
+		top: 30%;
+		left: 10px;
+		z-index: 99;
+		border: none;
+	}
+
+	.slick-prev {
+		background: url(../../assets/images/left_arrow.png) no-repeat top left;
+	}
+	.slick-next {
+		background: url(../../assets/images/right_arrow.png) no-repeat top left;
+		right: 10px;
+		left: auto;
+	}
+
+	.slick-slide {
+		position: relative;
+
+		.caption {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			display: inline-block;
+			padding: 10px;
+			z-index: 99;
+			background: $dark-grey;
+			color: #FFF;
+			opacity: 0.9;
+			font-size: 14px;
+		}
+	}
 
 }
