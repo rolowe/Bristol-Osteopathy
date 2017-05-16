@@ -6,6 +6,7 @@
         wp_nav_menu(['theme_location' => 'footer']);
       endif;
     ?>
+    <?php get_template_part('templates/locations', 'locations'); ?>
   </div>
 </div>
 

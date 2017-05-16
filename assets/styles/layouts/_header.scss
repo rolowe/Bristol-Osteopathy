@@ -37,7 +37,7 @@ div.meta-header {
 		li {
 			display: inline-block;
 			text-align: center;
-			width: 14%;
+			padding: 5px 27px;
 
 			a {
 				color: $mid-grey;
@@ -56,7 +56,7 @@ div.meta-header {
   position: relative;
 
   .slick-slide img {
-    max-width: 100%;
+    width: 100%;
   }
 
 	.slick-arrow {

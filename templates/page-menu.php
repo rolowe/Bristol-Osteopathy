@@ -13,9 +13,15 @@ if( have_rows('home_menu') ):
         <div class="page-item">
           <?php if( isset($thmb_src[0]) ) { ?>
             <img src="<?php echo $thmb_src[0]; ?>" alt="<?php echo $page->post_title; ?>" />
+          <?php } else { ?>
+            <img src="http://www.fillmurray.com/200/120" alt="<?php echo $page->post_title; ?>" />
           <?php } ?>
           <div class="info">
-            <p><?php echo $page->post_excerpt; ?></p>
+            <?php if ($page->post_excerpt != "") { ?>
+              <p><?php echo $page->post_excerpt; ?></p>
+            <?php } else { ?>
+              <p><?php echo wp_trim_words( get_the_content(), 25, '...' ); ?></p>
+            <?php } ?>
             <a href="<?php echo $page->guid; ?>" class="btn">Read more &#9658;</a>
           </div>
         </div>

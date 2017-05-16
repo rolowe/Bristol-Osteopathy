@@ -15,10 +15,25 @@
 
       a {
         color: #FFF;
+        text-transform: uppercase;
       }
     }
 
   }
+
+  .locations {
+    text-align: center;
+    color: #FFF;
+    padding: 5px;
+    font-size: 12px;
+
+    span {
+      color: $brand-green;
+      display: inline-block;
+      padding: 0 20px 0 5px;
+    }
+  }
+  
 }
 
 footer {
@@ -26,6 +41,7 @@ footer {
   text-align: center;
   padding: 30px 0;
   color: #FFF;
+  font-size: 13px;
 
   a {
     color: #FFF;

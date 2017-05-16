@@ -141,3 +141,11 @@ function register_menu_locations() {
   );
 }
 add_action( 'init', register_menu_locations );
+
+
+
+
+// ACF Options
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
