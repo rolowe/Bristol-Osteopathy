@@ -11,11 +11,5 @@
   <?php get_template_part('templates/locations', 'locations'); ?>
   <?php get_template_part('templates/page-menu', 'page-menu'); ?>
   <?php get_template_part('templates/testimonial', 'testimonial'); ?>
-
-<div class="row">
-  <div class="col-md-4">Col 1</div>
-  <div class="col-md-4">Col 2</div>
-  <div class="col-md-4">Col 3</div>
- </div>
-
+  <?php get_template_part('templates/news', 'news'); ?>
 <?php endwhile; ?>
