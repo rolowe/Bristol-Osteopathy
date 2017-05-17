@@ -25,7 +25,7 @@ div.meta-header {
 
 /*/////// NAV PRIMARY //////*/
 .nav-primary {
-	border-top: dashed 1px #CCC;
+	border-top: dashed 1px #CCC; 
 	padding: 10px 0;
 	overflow: hidden;
 
@@ -49,28 +49,6 @@ div.meta-header {
 	}
 
 }
-
-@media (min-width: 992px) {
-
-	.nav-primary {
-		ul li a {
-			font-size: 13px;
-		}
-	}
-
-}
-
-@media (min-width: 768px) {
-
-	.nav-primary {
-		ul li a {
-			font-size: 13px;
-		}
-	}
-
-}
-
-
 
 
 /*//// CAROUSEL STYLES ////*/
