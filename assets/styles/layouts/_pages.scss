@@ -3,8 +3,9 @@
 .page_content {
   padding: 30px 10% 0;
   text-align: center;
-  overflow: hidden;
+  overflow: hidden; 
 }
+
 
 .locations {
   text-align: center;
@@ -13,11 +14,16 @@
   font-weight: bold;
   padding-bottom: 50px;
 
-  span {
-    color: $brand-green;
-    display: inline-block;
-    padding: 0 20px 0 5px;
+  .location-item {
+
+    span.tel {
+      color: $brand-green;
+      display: inline-block;
+      padding: 0 20px 0 5px;
+    }
+
   }
+
 }
 
 

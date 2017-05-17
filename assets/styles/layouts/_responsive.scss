@@ -1,0 +1,56 @@
+
+
+//// Large Breakpoint
+@media (max-width: 992px) {
+
+	.nav-primary,
+	.footer-menu {
+		ul li a {
+			font-size: 13px;
+		}
+	}
+
+}
+
+
+//// Medium Breakpoint
+@media (max-width: 768px) {
+
+	.page-item-container {
+		width: 50%;
+	}
+
+	.location-item {
+		display: block;
+	}
+
+}
+
+
+
+//// Small Medium Breakpoint
+@media (max-width: 560px) {
+
+	.banner a.brand {
+	    max-width: 280px;
+	}
+
+	.page_content,
+	.testimonial {
+	    padding: 30px 0;
+	}
+
+	.page-item-container {
+		width: 80%;
+		margin: 0 auto;
+		float: none;
+		clear: both;
+	}
+
+	.footer-menu {
+		.locations {
+			display: none;
+		}
+	}
+
+}

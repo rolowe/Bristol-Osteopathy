@@ -4,8 +4,10 @@
     //print_r($locations);
 
     foreach ($locations as $location) {
-      echo $location['name'];
-      echo "<span>" . $location['number'] . "</span>";
+    	echo "<span class='location-item'>";
+      	echo $location['name'];
+      	echo "<span class='tel'>" . $location['number'] . "</span>";
+      	echo "</span>";
     }
   ?>
 </div>

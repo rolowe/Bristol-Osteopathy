@@ -10,7 +10,7 @@ div.meta-header {
 
 	a.brand {
 		display: block;
-		max-width: 500px;
+		max-width: 460px;
 		width: 100%;
 		margin: 20px auto;
 
@@ -37,7 +37,7 @@ div.meta-header {
 		li {
 			display: inline-block;
 			text-align: center;
-			padding: 5px 27px;
+			padding: 5px 0;
 			min-width: 14%;
 
 			a {
@@ -49,6 +49,28 @@ div.meta-header {
 	}
 
 }
+
+@media (min-width: 992px) {
+
+	.nav-primary {
+		ul li a {
+			font-size: 13px;
+		}
+	}
+
+}
+
+@media (min-width: 768px) {
+
+	.nav-primary {
+		ul li a {
+			font-size: 13px;
+		}
+	}
+
+}
+
+
 
 
 /*//// CAROUSEL STYLES ////*/
