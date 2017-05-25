@@ -1,5 +1,11 @@
 
 /*//// HOMEPAGE ////*/
+
+h2.page_title {
+  padding: 30px 0 0;
+  text-align: center;
+}
+
 .page_content {
   padding: 30px 10% 0;
   text-align: center;
@@ -111,9 +117,6 @@ div.locations {
 
 }
 
-
-
-
 /*////// News ///////*/
 
 section.news {
@@ -126,7 +129,41 @@ section.news {
       font-size: 13px;
     }
   }
+}
 
 
+/*////// FAQs ///////*/
+#accordion {
+  padding: 30px 10%;
 
+  .accordion-toggle {
+    cursor: pointer;
+    padding: 15px;
+    border-bottom: dashed 1px #CCC;
+    position: relative;
+  }
+  .accordion-toggle::after {
+      content: "\271A";
+      display: block;
+      width: 30px;
+      padding: 5px 0;
+      position: absolute;
+      right: 0;
+      top: 10px;
+      text-align: center;
+      font-weight: bold;
+      background: $brand-green;
+      color: #FFF;
+  }
+  .accordion-toggle.active::after {
+      background: #b7b7b7;
+      content: "\2716";
+  }
+  .accordion-content {
+    display: none;
+    padding: 0 10%;
+  }
+  .accordion-content.default {
+    display: block;
+  }
 }

@@ -12,7 +12,9 @@
 
         <div>
           <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $caption; ?>" />
-          <div class="caption"><?php echo $caption; ?></div>
+          <?php if($caption != "") { ?>
+            <div class="caption"><?php echo $caption; ?></div>
+          <?php } ?>
         </div>
 
         <?php
@@ -24,7 +26,3 @@
   ?>
 
 </div>
-
-<script>
-  $('.carousel').slick();
-</script>

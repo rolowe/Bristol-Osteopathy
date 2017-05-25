@@ -41,6 +41,20 @@
     }
   };
 
+  $(document).ready(function($) {
+    $('.carousel').slick();
+
+    $('#accordion div:first-child').addClass('default');
+
+    $('#accordion').find('.accordion-toggle').click(function(){
+      $(this).next().slideToggle('fast');
+      $('.accordion-toggle').removeClass('active');
+      $(this).addClass('active');
+      $(".accordion-content").not($(this).next()).slideUp('fast');
+    });
+  });
+
+
   // The routing fires all common scripts, followed by the page specific scripts.
   // Add additional events for more control over timing e.g. a finalize event
   var UTIL = {
