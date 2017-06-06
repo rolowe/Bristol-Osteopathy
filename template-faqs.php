@@ -8,7 +8,7 @@
   <?php get_template_part('templates/page', 'header'); ?>
   <?php get_template_part('templates/carousel', 'carousel'); ?>
 
-  <h2 class="page_title"><?php echo the_title(); ?></h2>
+  <?php get_template_part('templates/content', 'page'); ?>
 
   <div id="accordion">
 
@@ -29,10 +29,16 @@
     <?php endwhile; else : ?>
         <p>There are no FAQs :( </p>
     <?php endif; wp_reset_postdata(); ?>
+
+
   <?php endwhile; ?>
 
   </div>
 
-  <?php get_template_part('templates/content', 'page'); ?>
+  <div class="page_content">
+    <div class="secondary_content">
+      <?php echo the_field('secondary_content'); ?>
+    </div>
+  </div>
 
-  <?php get_template_part('templates/news', 'news'); ?>
+  <?php //get_template_part('templates/news', 'news'); ?>

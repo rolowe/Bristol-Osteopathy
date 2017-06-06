@@ -36,3 +36,26 @@ h4 {
 p {
 	font-size: 14px;
 }
+
+button {
+	background: $brand-green;
+	color: #FFF;
+	display: inline-block;
+	padding: 5px 10px;
+	border: none;
+
+	a {
+		color: #FFFFFF;
+
+		&:hover {
+			color: #FFF;
+			text-decoration: none;
+		}
+
+	}
+
+	&:hover {
+		cursor: pointer;
+		background: #1d9a9b;
+	}
+}

@@ -37,15 +37,17 @@ div.locations {
 }
 
 
-.page-item-container {
-  width: 33%;
-  float: left;
-  text-align: center;
+.secondary_content {
+  margin: 0 0 40px;
+}
 
-  h3::before {
-    content: "• ";
-    color: $brand-green;
-  }
+
+h3.item_name {
+  text-align: center;
+}
+h3.item_name::before {
+  content: "• ";
+  color: $brand-green;
 
 }
 
@@ -59,6 +61,7 @@ div.locations {
   overflow: hidden;
   background-color: $dark-grey;
   color: #FFF;
+  text-align: center;
 
   img {
     position: absolute;
@@ -166,4 +169,27 @@ section.news {
   .accordion-content.default {
     display: block;
   }
+}
+
+
+
+
+/*///// OSTEOPATHS //////*/
+.osteopaths_list {
+  margin: 30px 0;
+
+  p, button {
+    font-size: 12px;
+  }
+
+
+  img {
+    position: relative;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+  }
+
 }
