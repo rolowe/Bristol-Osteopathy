@@ -1,0 +1,58 @@
+// Pricing
+
+.price_lists {
+	padding: 30px 10% 20px;
+    overflow: hidden;
+    display: block;
+}
+
+.price_row {
+	display: flex; 
+	flex-direction: row;
+	align-items: stretch;
+	align-content: space-between;
+	padding: 10px 0;
+	overflow: hidden;
+	border-bottom: solid 1px #CCC;
+
+	div {
+		flex-grow: 1;
+		align-self: auto;
+
+		p { 
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	.price_name {
+		font-weight: 600;
+	}
+
+	.price_amount { 
+		max-width: 80px; 
+		text-align: center; 
+		border-left: solid 1px #CCC;
+		font-weight: 600;
+	}
+
+	.price_link { 
+		max-width: 80px; 
+		text-align: center; 
+	}
+
+	.btn {
+      background: $brand-green;
+      color: #FFF;
+      font-size: 12px;
+      padding: 5px;
+      border-radius: 0;
+      text-transform: uppercase;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+     }
+
+}

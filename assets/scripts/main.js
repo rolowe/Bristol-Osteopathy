@@ -46,12 +46,22 @@
 
     $('#accordion div:first-child').addClass('default');
 
-    $('#accordion').find('.accordion-toggle').click(function(){
-      $(this).next().slideToggle('fast');
-      $('.accordion-toggle').removeClass('active');
-      $(this).addClass('active');
-      $(".accordion-content").not($(this).next()).slideUp('fast');
+
+    $('.accordion-toggle').click(function(){
+
+      if( $(this).hasClass('active') ) {
+        //alert('hello');
+        $(this).removeClass('active');
+        $(this).next().slideToggle('fast');
+      }
+      else {
+        $(this).next().slideToggle('fast');
+        $(this).addClass('active');
+      }
+   
+      //$(".accordion-content").not( $(this).next() ).slideUp('fast');
     });
+
   });
 
 
