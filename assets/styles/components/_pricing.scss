@@ -4,6 +4,18 @@
 	padding: 30px 10% 20px;
     overflow: hidden;
     display: block;
+    margin-bottom: 30px; 
+}
+
+a.all {
+	display: block;
+	text-align: center;
+	margin: -30px auto 30px;
+
+	button {
+    	padding: 5px 10px;
+    	font-size: 14px;
+	}
 }
 
 .price_row {
@@ -29,8 +41,13 @@
 		font-weight: 600;
 	}
 
+	.price_desc {
+		text-align: right;
+		padding: 0 15px 0 0;
+	}
+
 	.price_amount { 
-		max-width: 80px; 
+		max-width: 240px; 
 		text-align: center; 
 		border-left: solid 1px #CCC;
 		font-weight: 600;

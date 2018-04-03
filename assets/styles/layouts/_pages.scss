@@ -1,6 +1,12 @@
 
 /*//// HOMEPAGE ////*/
 
+a img {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 h2.page_title {
   padding: 30px 0 0;
   text-align: center;
@@ -32,6 +38,54 @@ div.locations {
 
   .location-item::before {
     content: "• ";
+  }
+
+}
+
+.locations_list {
+  overflow: hidden;
+  padding: 30px 0;
+  text-align: center;
+
+  h3 {
+    font-size: 20px;
+    padding-bottom: 15px;
+    display: inline-block;
+  }
+
+  iframe {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+
+form.wpcf7-form {
+
+  label {
+    display: inline-block;
+    font-family: Open Sans,sans-serif;
+    text-transform: uppercase;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 10px;
+    border: none;
+    background: #efefef;
+    font-family: Open Sans,sans-serif;
+    margin-top: 5px;
+  }
+
+  input[type=submit] {
+    background: $brand-green;
+    color: #FFF;
+
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
   }
 
 }
@@ -176,11 +230,24 @@ section.news {
 
 /*///// OSTEOPATHS //////*/
 .osteopaths_list {
-  margin: 50px 0;
+  margin: 50px 0 0; 
+
+  .osteo {
+    padding-bottom: 50px;
+  }
 
   h2 {
     text-align: center;
     padding-bottom: 30px;
+  }
+
+  h4 a {
+    color: $dark-grey;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   span.location {
@@ -201,8 +268,68 @@ section.news {
     height: 200px;
     float: left;
     margin-right: 20px;
+    margin-bottom: 50px;
   }
 
+}
+
+
+.profile_pic img { 
+    position: relative;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 20px auto; 
+}
+
+.filter {
+    padding: 7px 10% 0;
+    background: #efefef;
+    display: block;
+    overflow: hidden;
+    font-size: 14px;
+    margin: -10px auto 35px;
+    max-width: 760px;
+
+  span {
+    font-weight: 600;
+    padding-right: 20px;
+  }
+
+  label {
+    padding-right: 14px;
+  }
+
+}
+
+
+.more_information {
+  padding: 50px 0 0;
+
+  h2 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .child_page {
+    background-color: #efefef;
+    padding: 20px;
+    margin: 10px 0;
+
+    h3 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 13px;
+    }
+
+    img {
+      float: left;
+      margin: 0 20px 20px 0;
+    }
+
+  }
 }
 
 
@@ -212,6 +339,11 @@ section.news {
 
   .info {
     padding-top: 15px;
+
+    h3 {
+      font-size: 18px;
+    }
+    
   }
 
   p, button {

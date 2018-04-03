@@ -1,28 +1,26 @@
 <div class="osteopaths_list">
 
-  <h2>Our Osteopaths</h2>
+    
 
-    <?php get_template_part('templates/location-filter', 'location-filter'); ?>
-
-    <div class="row">
+    
         <?php
-
-          global $post;
-          $post_slug=$post->post_name;
-
-          if($post_slug == 'all-osteopaths') {
-            $osteo_count = "-1";
-          } else {
-            $osteo_count = "4";
-          }
-
           $osteopaths_args = array(
-            'post_type' => 'osteopaths',
-            'posts_per_page' => $osteo_count,
-            'order'          => 'ASC'
+              'connected_type' => 'osteopaths_to_therapies',
+              'connected_items' => get_the_ID(),
+              'nopaging' => true,
+              'suppress_filters' => false
           );
           $osteopaths_query = new WP_Query($osteopaths_args);
+          
           if ( $osteopaths_query->have_posts() ) {
+
+            get_template_part('templates/location-filter', 'location-filter');
+
+            ?>
+
+              <div class="row">
+
+            <?php
 
             while ( $osteopaths_query->have_posts() ) {
             $osteopaths_query->the_post();
@@ -53,14 +51,16 @@
 
                   <?php the_excerpt(); ?>
                 </div>
-              <?php }
-              wp_reset_postdata();
-          }
-        ?>
+              <?php } 
+              wp_reset_postdata(); ?>
+           
+              
     </div>
 
-    <?php if($post_slug != 'all-osteopaths') { ?>
-      <a href="/bristol-osteopathy/all-osteopaths/" class="btn all"><button>View all Osteopaths</button></a>
-    <?php } ?>
+    <a href="/all-osteopaths/" class="btn all"><button>View all Osteopaths</button></a>
+          <?php } ?>
+
+
+    
 
   </div>

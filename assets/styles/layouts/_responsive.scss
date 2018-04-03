@@ -10,6 +10,15 @@
 		}
 	}
 
+	.osteopaths_list {
+		img {
+			display: block;
+		    clear: both;
+		    float: none;
+		    margin-bottom: 20px;
+		}
+	}
+
 }
 
 
@@ -22,6 +31,13 @@
 
 	.location-item {
 		display: block;
+	}
+
+	.filter {
+		span, label {
+			display: block;
+			clear: both;
+		}
 	}
 
 }

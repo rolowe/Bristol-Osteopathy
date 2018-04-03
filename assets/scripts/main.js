@@ -47,20 +47,33 @@
     $('#accordion div:first-child').addClass('default');
 
 
-    $('.accordion-toggle').click(function(){
+      $('.accordion-toggle').click(function(){
 
-      if( $(this).hasClass('active') ) {
-        //alert('hello');
-        $(this).removeClass('active');
-        $(this).next().slideToggle('fast');
-      }
-      else {
-        $(this).next().slideToggle('fast');
-        $(this).addClass('active');
-      }
+        if( $(this).hasClass('active') ) {
+          //alert('hello');
+          $(this).removeClass('active');
+          $(this).next().slideToggle('fast');
+        }
+        else {
+          $(this).next().slideToggle('fast');
+          $(this).addClass('active');
+        }
+
+      });
    
-      //$(".accordion-content").not( $(this).next() ).slideUp('fast');
-    });
+      //Location toggle Check boxes
+      $(function () {
+            $("input.location").click(function () {
+                if ($(this).is(":checked")) {
+                    var location = $(this).val();
+                    $(".osteo").hide();
+                    $("."+location+"_osteo").show();
+                    
+                } else {
+                    $(".osteo").show();
+                }
+            });
+        });
 
   });
 

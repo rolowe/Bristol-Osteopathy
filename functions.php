@@ -122,6 +122,14 @@ function my_connection_types() {
         'admin_column' => 'from'
     ) );
 
+    p2p_register_connection_type( array(
+        'name' => 'osteopaths_to_therapies',
+        'from' => 'osteopaths',
+        'to' => 'therapies',
+        'cardinality' => 'many-to-many',
+        'admin_column' => 'from'
+    ) );
+
 }
 add_action( 'p2p_init', 'my_connection_types' );
 

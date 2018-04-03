@@ -12,7 +12,7 @@
 
 <footer>
   <div class="container">
-    &copy; 2017 <a href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+    &copy; 2018 <a href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     <?php dynamic_sidebar('sidebar-footer'); ?>
   </div>
 </footer>
