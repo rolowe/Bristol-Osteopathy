@@ -47,7 +47,7 @@
                     <?php if( isset($thmb_src[0]) ) { ?>
                       <img src="<?php echo $thmb_src[0]; ?>" alt="<?php echo $therapy->post_title; ?>" />
                     <?php } else { ?>
-                      <img src="http://www.fillmurray.com/200/120" alt="<?php echo $therapy->post_title; ?>" />
+                      <img src="<?= esc_url(home_url('/')); ?>/wp-content/uploads/2018/01/Osteo2017.087-1.jpg" alt="<?php echo $therapy->post_title; ?>" />
                     <?php } ?>
                     <div class="info">
                      <h3><?php echo $therapy->post_title; ?></h3>
