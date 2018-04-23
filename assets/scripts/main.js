@@ -64,6 +64,11 @@
       //Location toggle Check boxes
       $(function () {
             $("input.location").click(function () {
+
+                $('input[type="checkbox"]').on('change', function() {
+                   $('input[type="checkbox"]').not(this).prop('checked', false);
+                });
+
                 if ($(this).is(":checked")) {
                     var location = $(this).val();
                     $(".osteo").hide();

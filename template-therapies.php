@@ -45,12 +45,12 @@
 
                   <div class="page-item">
                     <?php if( isset($thmb_src[0]) ) { ?>
-                      <img src="<?php echo $thmb_src[0]; ?>" alt="<?php echo $therapy->post_title; ?>" />
+                      <a href="<?php echo $therapy->guid; ?>"><img src="<?php echo $thmb_src[0]; ?>" alt="<?php echo $therapy->post_title; ?>" /></a>
                     <?php } else { ?>
-                      <img src="<?= esc_url(home_url('/')); ?>/wp-content/uploads/2018/01/Osteo2017.087-1.jpg" alt="<?php echo $therapy->post_title; ?>" />
+                      <a href="<?php echo $therapy->guid; ?>"><img src="<?= esc_url(home_url('/')); ?>/wp-content/uploads/2018/01/Osteo2017.087-1.jpg" alt="<?php echo $therapy->post_title; ?>" /></a>
                     <?php } ?>
                     <div class="info">
-                     <h3><?php echo $therapy->post_title; ?></h3>
+                     <h3><a href="<?php echo $therapy->guid; ?>"><?php echo $therapy->post_title; ?></a></h3>
                       <a href="<?php echo $therapy->guid; ?>" class="btn">Read more &#9658;</a>
                     </div>
                   </div>

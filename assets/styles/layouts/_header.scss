@@ -1,12 +1,24 @@
 div.meta-header {
+	position: fixed;
+	z-index: 999;
 	width: 100%;
 	padding: 10px;
 	background-color: $dark-grey;
 	color: #FFFFFF;
-  font-size: 13px;
+  	font-size: 13px;
+
+  	.meta-contact {
+  		float: right;
+
+  		span {
+  			display:inline-block;
+  			padding-left:15px;
+  		}
+  	}
 }
 
 .banner {
+	padding-top: 20px;
 
 	a.brand {
 		display: block;

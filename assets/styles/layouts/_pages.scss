@@ -102,7 +102,13 @@ h3.item_name {
 h3.item_name::before {
   content: "• ";
   color: $brand-green;
+}
+h3.item_name a {
+  color: #292b2c;
 
+  &:hover {
+    color: $brand-green;
+  }
 }
 
 .page-item {
@@ -342,6 +348,14 @@ section.news {
 
     h3 {
       font-size: 18px;
+    }
+
+    h3 a {
+      color: #FFFFFF;
+
+      &:hover {
+        color: $brand-green;
+      }
     }
     
   }

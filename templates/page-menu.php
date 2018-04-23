@@ -13,14 +13,14 @@ if( have_rows('home_menu') ):
 
 
         <div class="col-md-4">
-        <h3 class="item_name"><?php echo $page->post_title; ?></h3>
+        <h3 class="item_name"><a href="<?php echo $page->guid; ?>"><?php echo $page->post_title; ?></a></h3>
 
 
             <div class="page-item">
               <?php if( isset($thmb_src[0]) ) { ?>
-                <img src="<?php echo $thmb_src[0]; ?>" alt="<?php echo $page->post_title; ?>" />
+                <a href="<?php echo $page->guid; ?>"><img src="<?php echo $thmb_src[0]; ?>" alt="<?php echo $page->post_title; ?>" /></a>
               <?php } else { ?>
-                <img src="http://www.fillmurray.com/200/120" alt="<?php echo $page->post_title; ?>" />
+                <a href="<?php echo $page->guid; ?>"><img src="http://www.fillmurray.com/200/120" alt="<?php echo $page->post_title; ?>" /></a>
               <?php } ?>
               <div class="info">
                 <?php if ($page->post_excerpt != "") { ?>
