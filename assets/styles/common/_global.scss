@@ -33,8 +33,15 @@ h4 {
 	font-size: 20px;
 }
 
-p {
+p, li {
 	font-size: 14px;
+}
+
+.page_content {
+	ul {
+	  text-align: center;
+	  list-style: inside;
+	}
 }
 
 button {

@@ -6,7 +6,6 @@
 
     <div class="row">
         <?php
-
           global $post;
           $post_slug=$post->post_name;
 
@@ -19,8 +18,16 @@
           $osteopaths_args = array(
             'post_type' => 'osteopaths',
             'posts_per_page' => $osteo_count,
-            'order'          => 'ASC'
+            'order'          => 'ASC',
+            'meta_query' => array(
+              'relation' => 'OR',
+                array(
+                  'key' => 'job_type',
+                  'value' => 'osteopath'
+                )
+            )
           );
+
           $osteopaths_query = new WP_Query($osteopaths_args);
           if ( $osteopaths_query->have_posts() ) {
 
@@ -43,13 +50,13 @@
                   <a href="<?php echo get_permalink(); ?>"><?php echo get_the_post_thumbnail( $post_id, array( 200, 200) ); ?></a>
                   <h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
 
-                  <p>
+                  <ul class="location_attr">
                     <?php
                       foreach ($connected_locations as $location) {
-                        echo "<span class='location'>" . $location->post_title . " </span>";
+                        echo "<li><span class='location'>" . $location->post_title . " </span></li>";
                       }
                     ?>
-                  </p>
+                  </ul>
 
                   <?php the_excerpt(); ?>
                 </div>

@@ -41,13 +41,13 @@
                   <a href="<?php echo get_permalink(); ?>"><?php echo get_the_post_thumbnail( $post_id, array( 200, 200) ); ?></a>
                   <h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
 
-                  <p>
+                  <ul class="location_attr">
                     <?php
                       foreach ($connected_locations as $location) {
-                        echo "<span class='location'>" . $location->post_title . " </span>";
+                        echo "<li><span class='location'>" . $location->post_title . " </span></li>";
                       }
                     ?>
-                  </p>
+                  </ul>
 
                   <?php the_excerpt(); ?>
                 </div>

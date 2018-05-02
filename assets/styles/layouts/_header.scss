@@ -66,7 +66,12 @@ div.meta-header {
 /*//// CAROUSEL STYLES ////*/
 
 .carousel {
+  width: 100vw;
   position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 
   .slick-slide img {
     width: 100%;
@@ -78,7 +83,7 @@ div.meta-header {
 		text-indent: -999999em;
 		overflow: hidden;
 		position: absolute;
-		top: 30%;
+		top: 35%;
 		left: 10px;
 		z-index: 99;
 		border: none;
@@ -99,7 +104,7 @@ div.meta-header {
 		.caption {
 			position: absolute;
 			bottom: 0;
-			right: 0;
+			right: 10px;
 			display: inline-block;
 			padding: 10px;
 			z-index: 99;

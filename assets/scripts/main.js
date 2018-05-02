@@ -44,8 +44,12 @@
   $(document).ready(function($) {
     $('.carousel').slick();
 
-    $('#accordion div:first-child').addClass('default');
+    // News & Blog Carousels
+    $('.news-carousel').slick({ dots: true, arrows: false, autoplay: true, pauseOnHover: true });
+    $('.blog-carousel').slick({ dots: true, arrows: false, autoplay: true, pauseOnHover: true  }); 
 
+
+    $('#accordion div:first-child').addClass('default');
 
       $('.accordion-toggle').click(function(){
 

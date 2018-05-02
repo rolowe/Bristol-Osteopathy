@@ -78,6 +78,12 @@ form.wpcf7-form {
     margin-top: 5px;
   }
 
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
   input[type=submit] {
     background: $brand-green;
     color: #FFF;
@@ -185,6 +191,38 @@ h3.item_name a {
 section.news {
   margin: 30px auto;
 
+  h3 {
+    padding-left: 20px;
+  }
+
+  .slick-dots {
+    padding: 0 0 0 20px;
+
+    li {
+      float: left;
+      list-style: none;
+      display: inline-block;
+      margin-right: 20px;
+
+      button {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        padding: 0; 
+        text-indent: -999999em;
+        background-color: #CCC;
+      }
+    }
+
+    li.slick-active {
+      button {
+        background-color: #333;
+      }
+    }
+      
+  }
+
   .news-item {
     padding: 20px;
 
@@ -256,11 +294,33 @@ section.news {
     }
   }
 
-  span.location {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: $brand-green;
+  ul.location_attr {
+    margin: 0 0 15px;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+
+    span.location {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: $brand-green;
+    }
+
+    li {
+      display: inline-block;
+      float: left;
+    }
+
+    li:nth-child(2)::before,
+    li:nth-child(3)::before {
+      content:"• ";
+      display: inline-block;
+      margin: 0 6px;  
+    }
+
   }
+  
+
 
   p, button {
     font-size: 12px;
@@ -269,12 +329,12 @@ section.news {
 
   img {
     position: relative;
-    border-radius: 100px;
-    width: 200px;
-    height: 200px;
+    border-radius: 90px;
+    width: 180px;
+    height: 180px;
     float: left;
     margin-right: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 
 }
@@ -305,6 +365,7 @@ section.news {
 
   label {
     padding-right: 14px;
+    font-size: 13px;
   }
 
 }
