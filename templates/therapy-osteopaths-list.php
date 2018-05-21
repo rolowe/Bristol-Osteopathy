@@ -57,7 +57,7 @@
               
     </div>
 
-    <a href="/all-osteopaths/" class="btn all"><button>View all Osteopaths</button></a>
+    <a href="<?= esc_url(home_url('/')); ?>all-osteopaths/" class="btn all"><button>View all Practitioners</button></a>
           <?php } ?>
 
 

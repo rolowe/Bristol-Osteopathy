@@ -4,7 +4,7 @@
 <div class="row">
 
   <div class="col-md-6">
-    <h3>News</h3>
+    <h3><a href="<?= esc_url(home_url('/')); ?>category/news/">News</a></h3>
 
     <div class="news-carousel">
       
@@ -33,7 +33,7 @@
 
 
   <div class="col-md-6">
-    <h3>Blog</h3>
+    <h3><a href="<?= esc_url(home_url('/')); ?>category/blog/">Blog</a></h3>
 
       <div class="blog-carousel">
           <?php

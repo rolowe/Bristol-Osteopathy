@@ -276,10 +276,6 @@ section.news {
 .osteopaths_list {
   margin: 50px 0 0; 
 
-  .osteo {
-    padding-bottom: 50px;
-  }
-
   h2 {
     text-align: center;
     padding-bottom: 30px;
@@ -398,6 +394,28 @@ section.news {
 
   }
 }
+
+
+
+article.post {
+  display: block;
+  padding: 25px 0;
+  border-bottom: solid 1px #efefef;
+  text-align: left;
+
+  h2 {
+    font-size: 22px;
+  }
+  .updated {
+    font-size: 12px;
+  }
+  .author {
+    display: none;
+  }
+
+}
+
+
 
 
 

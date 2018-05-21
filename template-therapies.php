@@ -27,7 +27,10 @@
             ?>
 
 
-            <?php foreach ($therapies_query->posts as $therapy) { ?>
+            <?php 
+              foreach ($therapies_query->posts as $therapy) {
+                $thmb_src = wp_get_attachment_image_src( get_post_thumbnail_id($therapy->ID), 'large' );
+             ?>
 
               <?php
                 $connected_locations = get_posts( array(
