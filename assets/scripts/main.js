@@ -42,7 +42,11 @@
   };
 
   $(document).ready(function($) {
-    $('.carousel').slick();
+    //$('.carousel').slick();
+    $('.carousel').slick({
+      autoplay: true,
+      autoplaySpeed: 4000
+    });
 
     // News & Blog Carousels
     $('.news-carousel').slick({ dots: true, arrows: false, autoplay: true, pauseOnHover: true });

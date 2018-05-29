@@ -73,4 +73,18 @@
 		}
 	}
 
+	.price_lists {
+		padding: 0 0 20px;
+	}
+
+	.price_row {
+		.price_amount { 
+			border-left: none;
+			text-align: right;
+		}
+		.price_name {
+		    font-weight: 400;
+		}
+	}
+
 }

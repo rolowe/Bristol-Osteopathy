@@ -7,8 +7,10 @@
         $primary_email = get_field('primary_email', 'option');
       ?>
 
-      <span>E: <a href="mailto:<?php echo $primary_email; ?>"><?php echo $primary_email; ?></a></span>
-      <span>T: <a href="tel:<?php echo $primary_phone; ?>"><?php echo $primary_phone; ?></a></span>
+      <!-- <span>E: <a href="mailto:<?php //echo $primary_email; ?>"><?php //echo $primary_email; ?></a></span>
+      <span>T: <a href="tel:<?php //echo $primary_phone; ?>"><?php //echo $primary_phone; ?></a></span> -->
+
+      <span><a href="<?= esc_url(home_url('/')); ?>locations/" class="contact-cta">Get in touch</a></span>
       
   </div>
 </div>
