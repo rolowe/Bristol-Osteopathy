@@ -49,8 +49,8 @@
     });
 
     // News & Blog Carousels
-    $('.news-carousel').slick({ dots: true, arrows: false, autoplay: true, pauseOnHover: true });
-    $('.blog-carousel').slick({ dots: true, arrows: false, autoplay: true, pauseOnHover: true  }); 
+    $('.news-carousel').slick({ dots: true, arrows: false, autoplay: true, pauseOnHover: true, autoplaySpeed: 6000 });
+    //$('.blog-carousel').slick({ dots: true, arrows: false, autoplay: true, pauseOnHover: true  }); 
 
 
     $('#accordion div:first-child').addClass('default');

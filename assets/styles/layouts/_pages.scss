@@ -196,6 +196,10 @@ section.news {
   }
 
   .slick-dots {
+    display: block;
+    width: 115px;
+    margin: 20px auto;
+    overflow: hidden;
     padding: 0 0 0 20px;
 
     li {
@@ -228,6 +232,10 @@ section.news {
 
     p {
       font-size: 13px;
+    }
+    img {
+      height: auto;
+      width: 100%;
     }
   }
 }
